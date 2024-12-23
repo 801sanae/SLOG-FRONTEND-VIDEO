@@ -1,5 +1,7 @@
 # Svelte Study
-
+인프런 : [here](https://www.inflearn.com/course/svelte-rest-api-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/dashboard)<br>
+유투브 : [here](https://www.youtube.com/watch?v=PuY054WWs0U&list=PLEU9vwKdoCqSOCmW55QZM2k2RE3EKChHY)
+<br><br>
 해당 Svelte Prject는 [Vite](https://ko.vite.dev/guide/)를 통해 프로젝트를 init한다.
 
 ```bash
