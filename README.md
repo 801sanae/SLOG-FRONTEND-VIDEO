@@ -1,3 +1,59 @@
+# Svelte Study
+
+해당 Svelte Prject는 [Vite](https://ko.vite.dev/guide/)를 통해 프로젝트를 init한다.
+
+```bash
+## 1. 옛날방식인듯 --template 생략가능
+npm create vite@latest SLOG-FRONTEND-VIDEO --template svelte 
+## 2. 프로젝트로 들어가서
+cd projectName
+## 3. 패키지 설치
+npm install
+## 4. 시작
+npm run dev
+```
+
+<br><hr><br>
+
+Back-End : [here](https://github.com/freeseamew/SLOG-FASTIFY-PRISMA-SERVER)
+
+```bash
+npm install
+npm start
+```
+
+Design : [here](https://github.com/freeseamew/slog-with-tailwindcss)
+
+[컴퍼넌트 배치 관련](https://www.inflearn.com/courses/lecture?courseId=330724&unitId=152825&tab=curriculum&subtitleLanguage=ko)
+
+## Routing
+
+Svelte + tinro
+
+```bash
+npm i -D tinro
+```
+> [SvelteKit](https://github.com/sveltejs/kit#readme)은 라우터를 포함한다.
+
+## 서버통신 설정
+
+```bash
+npm install axios
+```
+
+
+
+
+
+<hr><br>
+<hr><br>
+<hr><br>
+
+
+
+
+
+
 # Svelte + Vite
 
 This template should help get you started developing with Svelte in Vite.
