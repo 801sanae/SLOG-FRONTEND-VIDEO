@@ -1,5 +1,5 @@
 import { writable, get } from "svelte/store";
-import { getApi, putApi, postApi, delApi } from "../service/api";
+import { getApi, putApi, postApi, delApi } from "../service/api.js";
 import { router } from "tinro";
 
 function setCurrentArticlesPage(){}
@@ -7,16 +7,14 @@ function setArticles(){}
 function setLoadingArticles(){}
 function setArticleContent(){}
 function setComments(){}
-function setAuth(){}
-function setArticlesMode(){}
+function setAuth(){
 
-function setIsLogin(){
     let initValues = {
         id: '',
         email: '',
         Authorization: '' // access_token
     }
-    
+
     const { subscribe, set, update } = writable({...initValues});
 
     const refresh = async () => {
@@ -32,6 +30,7 @@ function setIsLogin(){
     const resetUserInfo = () =>{
         set({...initValues});
     }
+
     const login = async (email, password) => {
         try{
             const options = {
@@ -48,8 +47,8 @@ function setIsLogin(){
         }catch(error){
             alert("오류가 발생하였습니다. 로그인을 다시시도해주세요.");
         }
-
     }
+
     const logout = async () => {
         try{
             const options = {
@@ -63,6 +62,7 @@ function setIsLogin(){
             alert("오류가 발생하였습니다. 다시시도해 주세요.");
         }
     }
+
     const register = async (email, pwd) => {
         try{
             const options = {
@@ -88,8 +88,10 @@ function setIsLogin(){
         logout,
         register
     }
-
 }
+function setArticlesMode(){}
+
+function setIsLogin(){}
 
 export const currentArticlesPage = setCurrentArticlesPage()
 export const articles = setArticles()
